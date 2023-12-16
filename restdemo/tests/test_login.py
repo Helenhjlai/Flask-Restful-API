@@ -45,5 +45,3 @@ class TestLogin(TestBase):
             "message": "Login failed, please enter the right username or password."
         }
         self.assertEqual(res_data, message)
-
-

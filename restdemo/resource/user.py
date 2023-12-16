@@ -100,4 +100,3 @@ class UserList(Resource):
         #     }
         users = UserModel.get_user_list()
         return [u.as_dict() for u in users]
-

@@ -17,4 +17,3 @@ class Tweet(Base):
         t = {t.name: getattr(self, t.name) for t in self.__table__.columns}
         t['create_at'] = t['create_at'].isoformat()
         return t
-

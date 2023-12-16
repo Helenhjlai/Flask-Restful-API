@@ -17,5 +17,3 @@ class Base(db.Model):
 
     def update(self):
         db.session.commit()
-
-

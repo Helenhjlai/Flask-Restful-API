@@ -83,4 +83,3 @@ class TestLogin(TestBase):
         res_data = json.loads(res.get_data(as_text=True))
 
         self.assertEqual(len(res_data), 1)
-

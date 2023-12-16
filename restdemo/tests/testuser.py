@@ -108,6 +108,3 @@ class TestUser(TestBase):
         self.assertEqual(res.status_code, 404)
         res_data = json.loads(res.get_data(as_text=True))
         self.assertEqual(res_data, {'message': 'user not found'})
-
-
-

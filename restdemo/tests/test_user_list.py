@@ -35,4 +35,3 @@ class TestUserList(TestBase):
         self.assertEqual(res.status_code, 200)
         res_list = json.loads(res.get_data(as_text=True))
         self.assertEqual(len(res_list), 1)
-
