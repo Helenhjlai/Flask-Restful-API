@@ -11,10 +11,6 @@ from restdemo import create_app, db
 
 application = create_app(config_name='production')
 
-if not db.has_table("user"):
-    with application.app_context():
-        db.drop_all()
-        db.create_all()
-        application.logger.info('Initialized the database!')
-else:
-    application.logger.info('Database already contains the users table.')
+with application.app_context():
+    db.create_all()
+    application.logger.info('Initialized the database!')
